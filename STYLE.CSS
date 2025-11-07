@@ -1,0 +1,142 @@
+/* ESTILOS ACESSÍVEIS PARA IDOSOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Fonte maior para melhor leitura */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* CABEÇALHO */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #34495e;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.hero {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* CARDS */
+.topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* BOTÕES GRANDES E ACESSÍVEIS */
+.btn {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #c0392b;
+}
+
+/* RODAPÉ */
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* DESIGN RESPONSIVO */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero h2 {
+        font-size: 24px;
+    }
+    
+    .topics {
+        grid-template-columns: 1fr;
+    }
+}
